@@ -1,0 +1,51 @@
+{
+	"employee": [{
+		"firstName": "nara",
+		"lastName": "simha",
+		"address": [
+			{
+				"street": "a",
+				"city": "b",
+				"state": "c"
+			},
+			{
+				"street": "a1",
+				"city": "b1",
+				"state": "c1"
+			}
+		]
+	},
+    {
+        "firstName": "nara2",
+		"lastName": "simha2",
+		"address": [
+			{
+				"street": "a2",
+				"city": "b2",
+				"state": "c2"
+			},
+			{
+				"street": "a3",
+				"city": "b3",
+				"state": "c3"
+			}
+		]
+	},
+    {
+        "firstName": "Abhimanyu",
+        "lastName": "Chauhan",
+        "address": [
+            {
+                "street": "Chirkunda",
+                "city": "Dhanbad",
+                "state": "Jharkhand"
+            },
+            {
+                "street": "Kadubesanhalli",
+                "city": "Bangalore",
+                "state": "Karnataka"
+            }
+        ]
+    }
+]
+}

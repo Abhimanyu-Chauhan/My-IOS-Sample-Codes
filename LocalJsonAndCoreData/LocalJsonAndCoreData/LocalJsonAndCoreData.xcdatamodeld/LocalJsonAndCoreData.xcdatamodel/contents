@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressCore" representedClassName=".Address" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="personRelation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonCore" inverseName="addressDetailRelation" inverseEntity="PersonCore" syncable="YES"/>
+    </entity>
+    <entity name="PersonCore" representedClassName=".Person" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="addressDetailRelation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AddressCore" inverseName="personRelation" inverseEntity="AddressCore" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AddressCore" positionX="-9" positionY="36" width="128" height="105"/>
+        <element name="PersonCore" positionX="-313.28515625" positionY="37.5390625" width="128" height="90"/>
+    </elements>
+</model>
